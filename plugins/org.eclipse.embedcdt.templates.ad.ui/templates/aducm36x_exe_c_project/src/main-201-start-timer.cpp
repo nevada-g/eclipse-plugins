@@ -1,5 +1,0 @@
-
-  timer timer;
-  
-  timer.start();
-  

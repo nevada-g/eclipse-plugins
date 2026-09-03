@@ -236,11 +236,10 @@
 				tip="Generate code for given RISC-V ISA (e.g. ‘rv64im’). ISA strings must be lower-case."
 				valueType="enumerated">
 				<enumeratedOptionValue
-command="-march=rv32imac"
-id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.target.arch.rv32imac"
-isDefault="true"
-name="RV32IMAC (rv32imac)">
-</enumeratedOptionValue>
+					id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.target.arch.default"
+					isDefault="true"
+					name="%option.target.isa.base.default">
+				</enumeratedOptionValue>
 				<enumeratedOptionValue
 					command="-march=rv32i"
 					id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.target.arch.rv32i"

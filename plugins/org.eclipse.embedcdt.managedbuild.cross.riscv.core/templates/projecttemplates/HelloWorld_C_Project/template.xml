@@ -126,6 +126,53 @@
 		</complex-array>
 	</process>
 
+	<!-- Auto-configure RISC-V ISA to rv32imac (Task 6) -->
+	<process type="org.eclipse.embedcdt.templates.core.SetMBSStringOptionValue">
+		<simple
+			name="projectName"
+			value="$(projectName)" />
+		<complex-array name="resourcePaths">
+			<element>
+				<simple
+					name="id"
+					value="ilg.gnumcueclipse.managedbuild.cross.riscv.option.target.isa.base" />
+				<simple
+					name="value"
+					value="ilg.gnumcueclipse.managedbuild.cross.riscv.option.target.arch.rv32imac" />
+				<simple
+					name="path"
+					value="" />
+			</element>
+		</complex-array>
+	</process>
+
+	<!-- Auto-configure ABI to ilp32 (Task 6) -->
+	<process type="org.eclipse.embedcdt.templates.core.SetMBSStringOptionValue">
+		<simple
+			name="projectName"
+			value="$(projectName)" />
+		<complex-array name="resourcePaths">
+			<element>
+				<simple
+					name="id"
+					value="ilg.gnumcueclipse.managedbuild.cross.riscv.option.target.abi" />
+				<simple
+					name="value"
+					value="ilp32" />
+				<simple
+					name="path"
+					value="" />
+			</element>
+		</complex-array>
+	</process>
+
+	<!-- Auto-create OpenOCD debug profile (Task 4, 7) -->
+	<process type="org.eclipse.embedcdt.debug.launchconfig.CreateOpenOcdLaunchConfig">
+		<simple
+			name="projectName"
+			value="$(projectName)" />
+	</process>
+
 	<process type="org.eclipse.cdt.ui.OpenFiles">
 		<simple
 			name="projectName"

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OEM Embedded CDT Debug Launch Configuration Plug-in
+Bundle-SymbolicName: org.eclipse.embedcdt.debug.launchconfig;singleton:=true
+Bundle-Version: 13.1.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: OEM
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.debug.core,
+ org.eclipse.cdt.core,
+ org.eclipse.cdt.managedbuilder.core,
+ org.eclipse.embedcdt.debug.gdbjtag.openocd.core
+Export-Package: org.eclipse.embedcdt.debug.launchconfig
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: org.eclipse.embedcdt.debug.launchconfig
